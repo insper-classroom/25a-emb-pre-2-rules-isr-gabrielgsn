@@ -1,7 +1,5 @@
 #include "asf.h"
 
-volatile int g_cnt = 0;
-volatile char g_str[10];
 volatile int btn_flag = 0;
 
 // This code creates a progress bar on an OLED screen that
@@ -12,12 +10,15 @@ void btn_callback(void) {
 
 void main(void) {
   int batata = 0;
+  int g_cnt - 0;
+  char g_str[10];
   batata = batata + 1;
+
 
   while (1) {
     if(btn_flag){
       if (g_cnt >= 8)
-      g_cnt = 0;
+        g_cnt = 0;
 
       g_cnt = 2;
 
